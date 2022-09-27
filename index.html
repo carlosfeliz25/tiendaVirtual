@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido__header">
+            <h1 class="titulo">Logo Tienda</h1>
+
+            <nav class="navegacion-principal">
+                <a href="#">Productos</a>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Ubicacion</a>
+                <a href="#">Contactos</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="imagen">
+        <div class="overlay">
+            <div class="contenedor contenido-imagen">
+                <h2>Nombre de Tienda</h2>
+            </div>
+        </div>
+        <picture>
+            <source srcset="build/img/bgtienda.avif" type="image/avif">
+            <source srcset="build/img/bgtienda.webp" type="image/webp">
+
+            <img loading="Lazy" width="200" height="300" src="build/img/bgtienda.jpg" alt="Fondo">
+        </picture>
+    </div>
+
+    <section class="producto contenedor">
+        <h3>Productos Destacados</h3>
+
+        <ul class="productos-imagenes"></ul>
+    </section>
+    
+
+    <script src="build/js/app.js"></script>
+</body>
+</html>
